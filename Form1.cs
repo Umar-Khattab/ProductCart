@@ -9,12 +9,17 @@ namespace ProductCart
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SidePanel.Show();
+            MainPanel.BringToFront();
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void CartBtn_Click(object sender, EventArgs e)
+        {
+            CartPanel.BringToFront();
         }
     }
 }

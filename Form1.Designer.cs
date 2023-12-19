@@ -30,55 +30,55 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainFrm));
             SidePanel = new Panel();
-            CartPanel = new Panel();
-            panel4 = new Panel();
-            label2 = new Label();
-            label3 = new Label();
-            button1 = new Button();
-            label5 = new Label();
-            pictureBox6 = new PictureBox();
-            panel5 = new Panel();
-            label6 = new Label();
-            label8 = new Label();
-            button2 = new Button();
-            label9 = new Label();
-            pictureBox7 = new PictureBox();
-            panel6 = new Panel();
-            label10 = new Label();
-            label11 = new Label();
-            button3 = new Button();
-            label12 = new Label();
-            pictureBox8 = new PictureBox();
-            panel7 = new Panel();
-            label13 = new Label();
-            label14 = new Label();
-            button4 = new Button();
-            label15 = new Label();
-            pictureBox9 = new PictureBox();
             panel1 = new Panel();
             CartBtn = new Button();
             HomeBtn = new Button();
             Logo = new Label();
             pictureBox1 = new PictureBox();
+            CartPanel = new Panel();
+            Cart4Panel = new Panel();
+            label2 = new Label();
+            label3 = new Label();
+            button1 = new Button();
+            label5 = new Label();
+            pictureBox6 = new PictureBox();
             Cart1Panel = new Panel();
+            label6 = new Label();
+            label8 = new Label();
+            button2 = new Button();
+            label9 = new Label();
+            pictureBox7 = new PictureBox();
+            Cart3Panel = new Panel();
+            label10 = new Label();
+            label11 = new Label();
+            button3 = new Button();
+            label12 = new Label();
+            pictureBox8 = new PictureBox();
+            Cart2Panel = new Panel();
+            label13 = new Label();
+            label14 = new Label();
+            button4 = new Button();
+            label15 = new Label();
+            pictureBox9 = new PictureBox();
+            Product1Panel = new Panel();
             currency = new Label();
             Cart1Price = new Label();
             AddCart1Btn = new Button();
             Cart1Label = new Label();
             pictureBox2 = new PictureBox();
-            Cart2Panel = new Panel();
+            Product2Panel = new Panel();
             label1 = new Label();
             Cart2Price = new Label();
             AddCart2Btn = new Button();
             Cart2Label = new Label();
             pictureBox3 = new PictureBox();
-            Cart3Panel = new Panel();
+            Product3Panel = new Panel();
             label4 = new Label();
             Cart3Price = new Label();
             AddCart3Btn = new Button();
             Cart3Label = new Label();
             pictureBox4 = new PictureBox();
-            Cart4Panel = new Panel();
+            Product4Panel = new Panel();
             label7 = new Label();
             Cart4Price = new Label();
             AddCart4Btn = new Button();
@@ -86,23 +86,22 @@
             pictureBox5 = new PictureBox();
             MainPanel = new Panel();
             SidePanel.SuspendLayout();
-            CartPanel.SuspendLayout();
-            panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            Cart1Panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            Cart2Panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            Cart3Panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             Cart4Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            Cart1Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            Cart3Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            Cart2Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            Product1Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            Product2Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            Product3Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            Product4Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             MainPanel.SuspendLayout();
             SuspendLayout();
@@ -120,29 +119,81 @@
             SidePanel.Size = new Size(325, 822);
             SidePanel.TabIndex = 0;
             // 
+            // panel1
+            // 
+            panel1.Location = new Point(322, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(747, 822);
+            panel1.TabIndex = 5;
+            // 
+            // CartBtn
+            // 
+            CartBtn.BackColor = Color.FromArgb(83, 66, 164);
+            CartBtn.FlatStyle = FlatStyle.Popup;
+            CartBtn.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            CartBtn.ForeColor = SystemColors.ControlLightLight;
+            CartBtn.Location = new Point(12, 241);
+            CartBtn.Name = "CartBtn";
+            CartBtn.Size = new Size(288, 59);
+            CartBtn.TabIndex = 3;
+            CartBtn.Text = "Cart";
+            CartBtn.UseVisualStyleBackColor = false;
+            CartBtn.Click += CartBtn_Click;
+            // 
+            // HomeBtn
+            // 
+            HomeBtn.BackColor = Color.FromArgb(83, 66, 164);
+            HomeBtn.FlatStyle = FlatStyle.Popup;
+            HomeBtn.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            HomeBtn.ForeColor = SystemColors.ControlLightLight;
+            HomeBtn.Location = new Point(12, 154);
+            HomeBtn.Name = "HomeBtn";
+            HomeBtn.Size = new Size(288, 59);
+            HomeBtn.TabIndex = 2;
+            HomeBtn.Text = "Home";
+            HomeBtn.UseVisualStyleBackColor = false;
+            HomeBtn.Click += button1_Click;
+            // 
+            // Logo
+            // 
+            Logo.AutoSize = true;
+            Logo.Font = new Font("Segoe UI Black", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Logo.ForeColor = SystemColors.ControlLightLight;
+            Logo.Location = new Point(135, 29);
+            Logo.Name = "Logo";
+            Logo.Size = new Size(117, 45);
+            Logo.TabIndex = 1;
+            Logo.Text = "eShop";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(48, 11);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(81, 75);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
+            // 
             // CartPanel
             // 
-            CartPanel.Controls.Add(panel4);
-            CartPanel.Controls.Add(panel5);
-            CartPanel.Controls.Add(panel6);
-            CartPanel.Controls.Add(panel7);
             CartPanel.Location = new Point(322, 0);
             CartPanel.Name = "CartPanel";
             CartPanel.Size = new Size(741, 809);
             CartPanel.TabIndex = 6;
             CartPanel.Paint += panel3_Paint;
             // 
-            // panel4
+            // Cart4Panel
             // 
-            panel4.Controls.Add(label2);
-            panel4.Controls.Add(label3);
-            panel4.Controls.Add(button1);
-            panel4.Controls.Add(label5);
-            panel4.Controls.Add(pictureBox6);
-            panel4.Location = new Point(391, 416);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(339, 390);
-            panel4.TabIndex = 4;
+            Cart4Panel.Controls.Add(label2);
+            Cart4Panel.Controls.Add(label3);
+            Cart4Panel.Controls.Add(button1);
+            Cart4Panel.Controls.Add(label5);
+            Cart4Panel.Controls.Add(pictureBox6);
+            Cart4Panel.Location = new Point(391, 416);
+            Cart4Panel.Name = "Cart4Panel";
+            Cart4Panel.Size = new Size(339, 390);
+            Cart4Panel.TabIndex = 4;
             // 
             // label2
             // 
@@ -193,17 +244,17 @@
             pictureBox6.TabIndex = 0;
             pictureBox6.TabStop = false;
             // 
-            // panel5
+            // Cart1Panel
             // 
-            panel5.Controls.Add(label6);
-            panel5.Controls.Add(label8);
-            panel5.Controls.Add(button2);
-            panel5.Controls.Add(label9);
-            panel5.Controls.Add(pictureBox7);
-            panel5.Location = new Point(24, 11);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(339, 390);
-            panel5.TabIndex = 1;
+            Cart1Panel.Controls.Add(label6);
+            Cart1Panel.Controls.Add(label8);
+            Cart1Panel.Controls.Add(button2);
+            Cart1Panel.Controls.Add(label9);
+            Cart1Panel.Controls.Add(pictureBox7);
+            Cart1Panel.Location = new Point(24, 11);
+            Cart1Panel.Name = "Cart1Panel";
+            Cart1Panel.Size = new Size(339, 390);
+            Cart1Panel.TabIndex = 1;
             // 
             // label6
             // 
@@ -254,17 +305,17 @@
             pictureBox7.TabIndex = 0;
             pictureBox7.TabStop = false;
             // 
-            // panel6
+            // Cart3Panel
             // 
-            panel6.Controls.Add(label10);
-            panel6.Controls.Add(label11);
-            panel6.Controls.Add(button3);
-            panel6.Controls.Add(label12);
-            panel6.Controls.Add(pictureBox8);
-            panel6.Location = new Point(24, 416);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(339, 390);
-            panel6.TabIndex = 3;
+            Cart3Panel.Controls.Add(label10);
+            Cart3Panel.Controls.Add(label11);
+            Cart3Panel.Controls.Add(button3);
+            Cart3Panel.Controls.Add(label12);
+            Cart3Panel.Controls.Add(pictureBox8);
+            Cart3Panel.Location = new Point(24, 416);
+            Cart3Panel.Name = "Cart3Panel";
+            Cart3Panel.Size = new Size(339, 390);
+            Cart3Panel.TabIndex = 3;
             // 
             // label10
             // 
@@ -315,17 +366,17 @@
             pictureBox8.TabIndex = 0;
             pictureBox8.TabStop = false;
             // 
-            // panel7
+            // Cart2Panel
             // 
-            panel7.Controls.Add(label13);
-            panel7.Controls.Add(label14);
-            panel7.Controls.Add(button4);
-            panel7.Controls.Add(label15);
-            panel7.Controls.Add(pictureBox9);
-            panel7.Location = new Point(391, 11);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(339, 390);
-            panel7.TabIndex = 2;
+            Cart2Panel.Controls.Add(label13);
+            Cart2Panel.Controls.Add(label14);
+            Cart2Panel.Controls.Add(button4);
+            Cart2Panel.Controls.Add(label15);
+            Cart2Panel.Controls.Add(pictureBox9);
+            Cart2Panel.Location = new Point(391, 11);
+            Cart2Panel.Name = "Cart2Panel";
+            Cart2Panel.Size = new Size(339, 390);
+            Cart2Panel.TabIndex = 2;
             // 
             // label13
             // 
@@ -376,72 +427,17 @@
             pictureBox9.TabIndex = 0;
             pictureBox9.TabStop = false;
             // 
-            // panel1
+            // Product1Panel
             // 
-            panel1.Location = new Point(322, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(747, 822);
-            panel1.TabIndex = 5;
-            // 
-            // CartBtn
-            // 
-            CartBtn.BackColor = Color.FromArgb(83, 66, 164);
-            CartBtn.FlatStyle = FlatStyle.Popup;
-            CartBtn.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            CartBtn.ForeColor = SystemColors.ControlLightLight;
-            CartBtn.Location = new Point(12, 241);
-            CartBtn.Name = "CartBtn";
-            CartBtn.Size = new Size(288, 59);
-            CartBtn.TabIndex = 3;
-            CartBtn.Text = "Cart";
-            CartBtn.UseVisualStyleBackColor = false;
-            // 
-            // HomeBtn
-            // 
-            HomeBtn.BackColor = Color.FromArgb(83, 66, 164);
-            HomeBtn.FlatStyle = FlatStyle.Popup;
-            HomeBtn.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            HomeBtn.ForeColor = SystemColors.ControlLightLight;
-            HomeBtn.Location = new Point(12, 154);
-            HomeBtn.Name = "HomeBtn";
-            HomeBtn.Size = new Size(288, 59);
-            HomeBtn.TabIndex = 2;
-            HomeBtn.Text = "Home";
-            HomeBtn.UseVisualStyleBackColor = false;
-            HomeBtn.Click += button1_Click;
-            // 
-            // Logo
-            // 
-            Logo.AutoSize = true;
-            Logo.Font = new Font("Segoe UI Black", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Logo.ForeColor = SystemColors.ControlLightLight;
-            Logo.Location = new Point(135, 29);
-            Logo.Name = "Logo";
-            Logo.Size = new Size(117, 45);
-            Logo.TabIndex = 1;
-            Logo.Text = "eShop";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(48, 11);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(81, 75);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
-            // 
-            // Cart1Panel
-            // 
-            Cart1Panel.Controls.Add(currency);
-            Cart1Panel.Controls.Add(Cart1Price);
-            Cart1Panel.Controls.Add(AddCart1Btn);
-            Cart1Panel.Controls.Add(Cart1Label);
-            Cart1Panel.Controls.Add(pictureBox2);
-            Cart1Panel.Location = new Point(24, 11);
-            Cart1Panel.Name = "Cart1Panel";
-            Cart1Panel.Size = new Size(339, 390);
-            Cart1Panel.TabIndex = 1;
+            Product1Panel.Controls.Add(currency);
+            Product1Panel.Controls.Add(Cart1Price);
+            Product1Panel.Controls.Add(AddCart1Btn);
+            Product1Panel.Controls.Add(Cart1Label);
+            Product1Panel.Controls.Add(pictureBox2);
+            Product1Panel.Location = new Point(24, 11);
+            Product1Panel.Name = "Product1Panel";
+            Product1Panel.Size = new Size(339, 390);
+            Product1Panel.TabIndex = 1;
             // 
             // currency
             // 
@@ -492,17 +488,17 @@
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
             // 
-            // Cart2Panel
+            // Product2Panel
             // 
-            Cart2Panel.Controls.Add(label1);
-            Cart2Panel.Controls.Add(Cart2Price);
-            Cart2Panel.Controls.Add(AddCart2Btn);
-            Cart2Panel.Controls.Add(Cart2Label);
-            Cart2Panel.Controls.Add(pictureBox3);
-            Cart2Panel.Location = new Point(391, 11);
-            Cart2Panel.Name = "Cart2Panel";
-            Cart2Panel.Size = new Size(339, 390);
-            Cart2Panel.TabIndex = 2;
+            Product2Panel.Controls.Add(label1);
+            Product2Panel.Controls.Add(Cart2Price);
+            Product2Panel.Controls.Add(AddCart2Btn);
+            Product2Panel.Controls.Add(Cart2Label);
+            Product2Panel.Controls.Add(pictureBox3);
+            Product2Panel.Location = new Point(391, 11);
+            Product2Panel.Name = "Product2Panel";
+            Product2Panel.Size = new Size(339, 390);
+            Product2Panel.TabIndex = 2;
             // 
             // label1
             // 
@@ -553,17 +549,17 @@
             pictureBox3.TabIndex = 0;
             pictureBox3.TabStop = false;
             // 
-            // Cart3Panel
+            // Product3Panel
             // 
-            Cart3Panel.Controls.Add(label4);
-            Cart3Panel.Controls.Add(Cart3Price);
-            Cart3Panel.Controls.Add(AddCart3Btn);
-            Cart3Panel.Controls.Add(Cart3Label);
-            Cart3Panel.Controls.Add(pictureBox4);
-            Cart3Panel.Location = new Point(24, 416);
-            Cart3Panel.Name = "Cart3Panel";
-            Cart3Panel.Size = new Size(339, 390);
-            Cart3Panel.TabIndex = 3;
+            Product3Panel.Controls.Add(label4);
+            Product3Panel.Controls.Add(Cart3Price);
+            Product3Panel.Controls.Add(AddCart3Btn);
+            Product3Panel.Controls.Add(Cart3Label);
+            Product3Panel.Controls.Add(pictureBox4);
+            Product3Panel.Location = new Point(24, 416);
+            Product3Panel.Name = "Product3Panel";
+            Product3Panel.Size = new Size(339, 390);
+            Product3Panel.TabIndex = 3;
             // 
             // label4
             // 
@@ -614,17 +610,17 @@
             pictureBox4.TabIndex = 0;
             pictureBox4.TabStop = false;
             // 
-            // Cart4Panel
+            // Product4Panel
             // 
-            Cart4Panel.Controls.Add(label7);
-            Cart4Panel.Controls.Add(Cart4Price);
-            Cart4Panel.Controls.Add(AddCart4Btn);
-            Cart4Panel.Controls.Add(Cart4Label);
-            Cart4Panel.Controls.Add(pictureBox5);
-            Cart4Panel.Location = new Point(391, 416);
-            Cart4Panel.Name = "Cart4Panel";
-            Cart4Panel.Size = new Size(339, 390);
-            Cart4Panel.TabIndex = 4;
+            Product4Panel.Controls.Add(label7);
+            Product4Panel.Controls.Add(Cart4Price);
+            Product4Panel.Controls.Add(AddCart4Btn);
+            Product4Panel.Controls.Add(Cart4Label);
+            Product4Panel.Controls.Add(pictureBox5);
+            Product4Panel.Location = new Point(391, 416);
+            Product4Panel.Name = "Product4Panel";
+            Product4Panel.Size = new Size(339, 390);
+            Product4Panel.TabIndex = 4;
             // 
             // label7
             // 
@@ -677,10 +673,10 @@
             // 
             // MainPanel
             // 
-            MainPanel.Controls.Add(Cart4Panel);
-            MainPanel.Controls.Add(Cart1Panel);
-            MainPanel.Controls.Add(Cart3Panel);
-            MainPanel.Controls.Add(Cart2Panel);
+            MainPanel.Controls.Add(Product4Panel);
+            MainPanel.Controls.Add(Product1Panel);
+            MainPanel.Controls.Add(Product3Panel);
+            MainPanel.Controls.Add(Product2Panel);
             MainPanel.Location = new Point(322, 0);
             MainPanel.Name = "MainPanel";
             MainPanel.Size = new Size(741, 809);
@@ -693,38 +689,37 @@
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(1067, 810);
             Controls.Add(SidePanel);
-            Controls.Add(CartPanel);
             Controls.Add(MainPanel);
+            Controls.Add(CartPanel);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MainFrm";
             Text = "Form1";
             SidePanel.ResumeLayout(false);
             SidePanel.PerformLayout();
-            CartPanel.ResumeLayout(false);
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            panel5.ResumeLayout(false);
-            panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            panel6.ResumeLayout(false);
-            panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            panel7.ResumeLayout(false);
-            panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            Cart1Panel.ResumeLayout(false);
-            Cart1Panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            Cart2Panel.ResumeLayout(false);
-            Cart2Panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            Cart3Panel.ResumeLayout(false);
-            Cart3Panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             Cart4Panel.ResumeLayout(false);
             Cart4Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            Cart1Panel.ResumeLayout(false);
+            Cart1Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            Cart3Panel.ResumeLayout(false);
+            Cart3Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            Cart2Panel.ResumeLayout(false);
+            Cart2Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            Product1Panel.ResumeLayout(false);
+            Product1Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            Product2Panel.ResumeLayout(false);
+            Product2Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            Product3Panel.ResumeLayout(false);
+            Product3Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            Product4Panel.ResumeLayout(false);
+            Product4Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             MainPanel.ResumeLayout(false);
             ResumeLayout(false);
@@ -737,50 +732,50 @@
         private Label Logo;
         private Button HomeBtn;
         private Button CartBtn;
-        private Panel Cart1Panel;
+        private Panel Product1Panel;
         private Button AddCart1Btn;
         private Label Cart1Label;
         private PictureBox pictureBox2;
         private Label currency;
         private Label Cart1Price;
-        private Panel Cart2Panel;
+        private Panel Product2Panel;
         private Label label1;
         private Label Cart2Price;
         private Button AddCart2Btn;
         private Label Cart2Label;
         private PictureBox pictureBox3;
-        private Panel Cart3Panel;
+        private Panel Product3Panel;
         private Label label4;
         private Label Cart3Price;
         private Button AddCart3Btn;
         private Label Cart3Label;
         private PictureBox pictureBox4;
-        private Panel Cart4Panel;
+        private Panel Product4Panel;
         private Label label7;
         private Label Cart4Price;
         private Button AddCart4Btn;
         private Label Cart4Label;
         private PictureBox pictureBox5;
         private Panel CartPanel;
-        private Panel panel4;
+        private Panel Cart4Panel;
         private Label label2;
         private Label label3;
         private Button button1;
         private Label label5;
         private PictureBox pictureBox6;
-        private Panel panel5;
+        private Panel Cart1Panel;
         private Label label6;
         private Label label8;
         private Button button2;
         private Label label9;
         private PictureBox pictureBox7;
-        private Panel panel6;
+        private Panel Cart3Panel;
         private Label label10;
         private Label label11;
         private Button button3;
         private Label label12;
         private PictureBox pictureBox8;
-        private Panel panel7;
+        private Panel Cart2Panel;
         private Label label13;
         private Label label14;
         private Button button4;
